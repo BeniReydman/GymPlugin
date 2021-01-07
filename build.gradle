@@ -7,7 +7,6 @@ plugins {
 // This may not be required, but has solved issues in the past
 compileJava.options.encoding = 'UTF-8'
 
-// TODO: Change the following to match your information
 group = 'com.gym'
 version = '1.0.0'
 description = 'Gym Leader Plugin for Pixelmon'
@@ -18,4 +17,5 @@ repositories {
 
 dependencies {
     compile 'org.spongepowered:spongeapi:7.2.0'
+    compile 'org.javalite:activejdbc:2.2'
 }
