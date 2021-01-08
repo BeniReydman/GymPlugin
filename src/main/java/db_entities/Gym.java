@@ -1,4 +1,5 @@
 package db_entities;
+
 import org.javalite.activejdbc.Model;
 
 public class Gym extends Model {
