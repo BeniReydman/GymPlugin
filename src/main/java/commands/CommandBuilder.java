@@ -7,8 +7,7 @@ import org.spongepowered.api.command.spec.CommandSpec;
 import org.spongepowered.api.text.Text;
 import org.spongepowered.api.text.format.TextColors;
 
-//Import packages
-import GymProject.GymMain;
+import main.GymMain;
 
 public class CommandBuilder {
 	 public static void buildCommands(GymMain plugin) {
