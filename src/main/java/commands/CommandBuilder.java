@@ -3,6 +3,7 @@ package commands;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.command.spec.CommandSpec;
 import org.spongepowered.api.text.Text;
+import main.GymMain;
 
 public class CommandBuilder {
     public static void buildCommands(GymMain plugin) {
