@@ -20,23 +20,23 @@ public class GymMain {
     private Logger logger;
 
     public static void main(String[] args) {
-
     }
 
     @Listener
     public void onServerStart(GameStartedServerEvent event) {
         logger.info("GymPlugin is running.");
-        
-    	// Connect to databases
-    	if(!DBHandler.connect())
-    	{
-    		DBHandler.createNewDatabase();
-    	}
     }
 
     @Listener
     public void onInitialization(GameInitializationEvent event) {
-
+    	// Connect to databases
+    	if(!DBHandler.connect())
+    	{
+    		// If connection fails, database does not exist
+    		DBHandler.createNewDatabase();
+    		DBHandler.createTables();
+    	}
+    	
         CommandBuilder.buildCommands(this);
     }
 
